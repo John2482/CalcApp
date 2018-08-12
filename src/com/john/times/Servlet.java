@@ -26,6 +26,7 @@ public class Servlet extends HttpServlet {
 	 
 	        request.getRequestDispatcher("/multiply.jsp").forward(request, response);
 	    }
+	//TEsting
 	@Override
 	protected void doPost( HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

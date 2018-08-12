@@ -10,7 +10,6 @@
 
 <title>Calculator!</title>
 </head>
-
 <body>
 	<div class="calc">
 		<h2>Number Multiplier!</h2>

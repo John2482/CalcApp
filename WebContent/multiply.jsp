@@ -28,7 +28,6 @@
 		    
 		    <input type="submit" value="Submit"> 
 		    <input type="reset" value="Reset">
-		    <input type="button" value="TEST">
 		</form>
 
 		<p>Answer Is: ${answer}</p>

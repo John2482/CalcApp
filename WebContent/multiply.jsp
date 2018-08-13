@@ -14,19 +14,22 @@
 	<div class="calc">
 		<h2>Number Multiplier!</h2>
 		<form method="post" action="Servlet">
-			<p>Enter First Number:
+			<p>Enter First Number:  
 			<input type="text" name="1number">
 			</p>
 			<p>Enter Second number:
 			<input type="text" name="2number"> <br> 
 			</p>
-			<input type="radio" name="sel" value="add"> Add<br> 
-			<input type="radio" name="sel" value="sub"> Sub<br>
-			<input type="radio" name="sel" value="mult"> Mul<br>
-			<input type="radio" name="sel" value="div"> Div<br>
-		    
-		    <input type="submit" value="Submit"> 
-		    <input type="reset" value="Reset">
+		
+		    <input type="submit" name="sel" value="add" class="button">
+		    <input type="submit" name="sel" value="sub" class="button">
+		    <input type="submit" name="sel" value="mult" class="button">
+		    <input type="submit" name="sel" value="div" class="button">
+	
+		    <br>
+		    <p class="rButton">
+		    <input type="reset" value="Reset" class="button">
+		    </p>
 		</form>
 
 		<p>Answer Is: ${answer}</p>

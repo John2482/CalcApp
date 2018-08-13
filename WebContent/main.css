@@ -2,7 +2,7 @@
 
 .calc{
 	margin: auto;
-    width: 50%;
+    width: 40%;
     padding: 5px;
     text-align: center;
     border-style: solid;
@@ -16,4 +16,18 @@
 	text-align: center;
 	padding: 1px;
 	color: red;
+}
+
+.rButton{
+	padding: 1px;
+}
+
+.button{
+	border-radius: 5px;
+	width: 100px;
+}
+
+.button:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    
 }

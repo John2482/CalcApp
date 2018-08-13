@@ -34,6 +34,12 @@
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     
 }
-.header{
-	text-shadow: 3px 5px 12px rgba(28,110,164,0.86);
+.title{
+	weight: 20px;
+	text-shadow: 23px 25px 212px black;
+	margin: auto;
+	font-weight: bold;
+	font-size: 45px;
+	text-align: center;
+	padding: 1px;
 }

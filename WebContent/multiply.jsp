@@ -11,8 +11,9 @@
 <title>Calculator!</title>
 </head>
 <body>
+	<p class="title">Calculator App </p>
 	<div class="calc">
-		<h2>Calculator App</h2>
+
 		<form method="post" action="Servlet">
 			<p>Enter First Number:  
 			<input type="text" name="1number">

@@ -12,12 +12,12 @@
 </head>
 <body>
 	<div class="calc">
-		<h2>Number Multiplier!</h2>
+		<h2>Calculator App</h2>
 		<form method="post" action="Servlet">
 			<p>Enter First Number:  
 			<input type="text" name="1number">
 			</p>
-			<p>Enter Second number:
+			<p class="header">Enter Second number:
 			<input type="text" name="2number"> <br> 
 			</p>
 		

@@ -1,5 +1,10 @@
 @CHARSET "ISO-8859-1";
-
+.table{
+	text-align: center;
+	margin: auto;
+	width: 60%;
+	padding: 7px;
+}
 .calc{
 	margin: auto;
     width: 40%;
@@ -7,6 +12,7 @@
     text-align: center;
     border-style: solid;
     background: grey;
+    border-radius: 15px;
 }
 
 .divErr{
@@ -24,15 +30,24 @@
 
 .button{
 	border-radius: 5px;
-	width: 100px;
+	width: 70px;
 	color: white;
 	background: #1a1a1a;
 	text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+	border: 1px solid 	rgb(204, 204, 204);
+	font-family: helvetica, serif;
+	height: 70px;
 }
 
 .button:hover {
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    color: red;
     
+}
+.formInput{
+	padding: 1px;
+	width: 75px;
+	border-radius: 5px;
 }
 .title{
 	weight: 20px;
@@ -42,4 +57,10 @@
 	font-size: 45px;
 	text-align: center;
 	padding: 1px;
+}
+
+.input{
+	text-align: center;
+	padding: 1px;
+	
 }

@@ -11,26 +11,38 @@
 <title>Calculator!</title>
 </head>
 <body>
-	<p class="title">Calculator App </p>
+	<p class="title">Calculator App</p>
 	<div class="calc">
 
 		<form method="post" action="Servlet">
-			<p>Enter First Number:  
-			<input type="text" name="1number">
-			</p>
-			<p class="header">Enter Second number:
-			<input type="text" name="2number"> <br> 
-			</p>
-		
-		    <input type="submit" name="sel" value="add" class="button">
-		    <input type="submit" name="sel" value="sub" class="button">
-		    <input type="submit" name="sel" value="mult" class="button">
-		    <input type="submit" name="sel" value="div" class="button">
-	
-		    <br>
-		    <p class="rButton">
-		    <input type="reset" value="Reset" class="button">
-		    </p>
+			<div class="table">
+			<table>
+				<tr>
+				<td>${display}</td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="sel" value="1" class="button"></td>
+					<td><input type="submit" name="sel" value="2" class="button"></td>
+					<td><input type="submit" name="sel" value="3" class="button"></td>
+					<td><input type="submit" name="sel" value="+" class="button"></td>
+					<td><input type="submit" name="sel" value="-" class="button"></td>
+				</tr>
+				
+				<tr>
+					<td><input type="submit" name="sel" value="4" class="button"></td>
+					<td><input type="submit" name="sel" value="5" class="button"></td>
+					<td><input type="submit" name="sel" value="6" class="button"></td>
+					<td><input type="submit" name="sel" value="*" class="button"></td>
+					<td><input type="submit" name="sel" value="/" class="button"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="sel" value="7" class="button"></td>
+					<td><input type="submit" name="sel" value="8" class="button"></td>
+					<td><input type="submit" name="sel" value="9" class="button"></td>
+					<td><input type="submit" name="sel" value="Clr" class="button"></td>
+				</tr>
+			</table>
+			</div>
 		</form>
 
 		<p>Answer Is: ${answer}</p>

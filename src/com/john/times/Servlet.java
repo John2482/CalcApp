@@ -30,38 +30,13 @@ public class Servlet extends HttpServlet {
 	@Override
 	protected void doPost( HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-		int answer = 0;
-		String error = "";
-		int number1 = Integer.parseInt(request.getParameter("1number"));
-        int number2 = Integer.parseInt(request.getParameter("2number"));
-        String button = request.getParameter("sel");
+		
+        String display = "";
+		String button = request.getParameter("sel");
+        display = request.getParameter("display");
+        String answer = display + button;
+        request.setAttribute("display", answer);
         
-        if(button.equals("add"))
-        {
-        	answer = m.add(number1, number2);
-        }
-        else if(button.equals("sub"))
-        {
-        	answer = m.sub(number1, number2);
-        }
-        else if(button.equals("mult"))
-        {
-        	answer = m.mult(number1, number2);
-        }
-        else if(button.equals("div"))
-        {
-        	if(number2 == 0){
-        		
-        		error = "CANT DIVIDE BY ZERO!!!!!";
-        		request.setAttribute("error", error);
-        		request.setAttribute("answer", "NULL");
-        	}
-        	else
-        	{
-        		answer = m.div(number1, number2);
-        	}
-        }
-        request.setAttribute("answer", answer);
         
         doGet(request, response);
     }
